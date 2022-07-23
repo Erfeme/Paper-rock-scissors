@@ -39,5 +39,12 @@ function playFive(){
     for(let i = 0; i < 5; i++){
         playRound();
     }
-    
+    again = prompt('Quieres jugar otra vez? Escribe Si o No').toLowerCase();
+
+    if(again == "si"){
+        playFive();
+    } else if(again == "no") {
+        alert("Gracias por jugar!");
+        return;
+    }
 }
