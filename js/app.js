@@ -32,3 +32,12 @@ function playRound(){
     }
 }
 
+
+function playFive(){
+    alert('Vamos a jugar Piedra papel o tijeras 5 veces contra la computadora!')
+    
+    for(let i = 0; i < 5; i++){
+        playRound();
+    }
+    
+}
